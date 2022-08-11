@@ -1,0 +1,73 @@
+body {
+	font-family: "Poppins";
+}
+
+.background {
+	background-image: url(./images/bgnew.jpg);
+	background-size: cover;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+div > h1 {
+	font-size: 4rem;
+}
+
+.full-stack {
+	color: #555555;
+	font-style: italic;
+}
+
+.abt-me {
+	font-size: 2.5rem;
+	font-weight: 400;
+	color: #7A7371;
+}
+
+.subtitle{
+	font-size: 1.5rem;
+	font-weight: 300;
+}
+
+.card-text {
+	font-weight: 300;
+}
+
+.question{
+	font-weight: 400;
+	color: #7A7371;
+}
+
+.ask-me {
+	font-weight: 300;
+}
+
+
+.fb {
+	color: #7A7371;
+	transition: color 0.2s;
+}
+
+.fb:hover {
+	color: #7C99AC;
+}
+
+.linkdin {
+	color: #7A7371;
+	transition: color 0.2s;
+}
+
+.linkdin:hover {
+	color: #7C99AC;
+}
+
+.gitlab {
+	color: #7A7371;
+	transition: color 0.2s;
+}
+
+.gitlab:hover {
+	color: #7C99AC;
+}
