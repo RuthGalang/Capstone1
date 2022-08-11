@@ -28,13 +28,13 @@
     <body>
 
         <!-- Navbar Section Start -->
-            <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top justify-content-center">
+              <button class="mr-auto navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link active ml-4" href="#landing">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link active" href="#landing">Home <span class="sr-only">(current)</span></a>
                   <a class="nav-link ml-4" href="#about-me">About Me</a>
                   <a class="nav-link ml-4" href="#projects">Projects</a>
                   <a class="nav-link ml-4" href="#contact-me">Contact Me</a>
@@ -61,12 +61,12 @@
         <section id="about-me">
         <div class="container-fluid">
                 <div class="row pt-5 pb-5">
-                <div class="p-5 col-sm-12 col-md-6 text-center order-2 order-sm-2 order-md-1 order-lg-1">
+                <div class="p-5 col-sm-12 col-md-12 col-lg-6 text-center order-sm-1 order-md-1">
                     <h5 class="abt-me mb-2">About Me</h5>
                     <p class="subtitle text-justify">I'm a graduate of Bachelor of Science in Computer Engineering. I like watching TV shows like FRIENDS and The Big Bang Theory. I also like building LEGO in my free time and I'm also a collector of anime action figures. I join Zuitt Bootcamp to upgrade my career and to learn more in the field of Information Technology.</p>
                 </div>
                 <!-- Carousel Section Start -->
-                <div class="p-5 col-sm-12 col-md-6 order-1 order-sm-1 order-md-2 order-lg-2">
+                <div class="p-5 col-sm-12 col-md-12 col-lg-6 order-sm-2 order-md-2">
                     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                                   <ol class="carousel-indicators">
                                     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -163,7 +163,7 @@
                 <h1 class="question">Got anything in mind?</h1>
                 <h3 class="mt-3 ask-me">Reach out by sending an email</h3>
                 <div class="mt-3 pb-5">
-                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#staticBackdrop">Send an Email</button>
+                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalContactForm">Send an Email</button>
                 </div>
             <div class="pt-5">
                <div class="d-md-block d-flex pt-5 pb-3 justify-content-center">
@@ -178,26 +178,7 @@
                 </a>
             </div>
             </div>
-        <!-- Modal Section Start -->
-            <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Your email have been received</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                     I will get back to you as soon as possible.
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-        <!-- Modal Section End -->
+
         </div>  
         </div>
         <!-- Contact Me Section Start -->
@@ -217,6 +198,51 @@
         </section>
         <!-- End of Footer -->
 
+        <!-- Modal Section Start -->
+            <section class="pl-3 pr-3">
+            <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="md-form mb-2">
+                      <i class="ml-1 fas fa-user prefix grey-text"></i> 
+                      <label data-error="wrong" data-success="right" for="form34">Your Name</label>
+                      <input type="text" id="form34" class="form-control validate">
+                    </div>
+
+                    <div class="md-form mb-2">
+                      <i class="ml-1 fas fa-envelope prefix grey-text"></i>
+                      <label data-error="wrong" data-success="right" for="form29">Your Email</label>
+                      <input type="email" id="form29" class="form-control validate">
+                    </div>
+
+                    <div class="md-form mb-5">
+                      <i class="ml-1 fas fa-tag prefix grey-text"></i>
+                      <label data-error="wrong" data-success="right" for="form32">Subject</label>
+                      <input type="text" id="form32" class="form-control validate">
+                    </div>
+
+                    <div class="md-form mb-2">
+                      <i class="ml-1 fas fa-pencil prefix grey-text"></i>
+                      <label data-error="wrong" data-success="right" for="form8">Your message</label>
+                      <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                    </div>
+                  </div>
+                  <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn btn-dark text-light" data-dismiss="modal">Send</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </section>
+        <!-- Modal Section End -->
 
         <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
